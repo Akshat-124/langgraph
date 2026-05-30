@@ -1,0 +1,20 @@
+# ─────────────────────────────────────────────
+# SUB-AGENT 1 — Requirements
+# Install with:  pip install -r requirements.txt
+# ─────────────────────────────────────────────
+
+# ── LangChain + LangGraph ─────────────────────
+langgraph>=0.2.0                  # The graph orchestration engine
+langchain>=0.2.0                  # Core LangChain abstractions
+langchain-core>=0.2.0             # Messages, prompts, base classes
+langchain-anthropic>=0.1.0        # Anthropic Claude integration
+
+# ── HTTP Requests (for API calls) ─────────────
+requests>=2.31.0                  # World Bank + IMF API calls
+urllib3>=2.0.0                    # Dependency of requests
+
+# ── Environment Variables ─────────────────────
+python-dotenv>=1.0.0              # Loads .env file automatically
+
+# ── Optional: LangSmith (for tracing/debugging) ──
+# langsmith>=0.1.0                # Uncomment to enable observability
